@@ -1,0 +1,51 @@
+/*variables*/
+:root {
+    --header-height: 200px;
+    --header-width: 50%;
+    --header-radius: 10%;
+
+    --content-height: 50%;
+    --content-width: 50%;
+    --content-padding: 10px;
+    --content-radius: 5%;
+    --content-border: black;
+
+
+    --content-shadow-color: rgb(134, 59, 134);
+    --content-background-color: rgb(150, 110, 150);
+    
+
+    --body-background-color: rgb(248, 175, 242);
+    background-color: var(--body-background-color);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+
+
+#body-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--body-background-color);
+    margin: auto;
+    height: var(--content-height);
+    width: var(--content-width);
+    padding: 10px;
+}
+
+.content-box {
+    height: var(--content-height);
+    width: var(--content-width);
+    padding: var(--content-padding);
+    border-radius: var(--content-radius);
+    border-color: var(--content-border);
+    background-color: var(--content-background-color);
+    margin: auto;
+}
