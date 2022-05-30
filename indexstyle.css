@@ -1,0 +1,55 @@
+:root {
+    --content-margin: 20%;
+    --email-margin: 5%;
+    --header-height: 10%;
+
+    --background-color: #CCCCCC;
+    --div-color: #888888;
+} 
+
+body {
+    align-items: center;
+    background-color: var(--background-color);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    margin-left: var(--content-margin);
+    margin-right: var(--content-margin);
+    margin-bottom: var(--email-margin);
+    text-align: center;
+}
+
+
+
+/*#contact-info {}*/
+
+#main-content-container {
+    text-align: center;
+    flex-direction: column;
+    margin-left: var(--content-margin);
+    margin-right: var(--content-margin);
+    
+}
+
+/*#welcome {}*/
+
+#disclaimers {
+    margin-left: var(--content-margin);
+    margin-right: var(--content-margin);
+    text-align: center;
+}
+
+.title-name {
+    font-size: large;
+}
+
+.title-email {
+    font-size: smaller;
+}
+
+.content-unit {
+    border: 2px solid var(--background-color);
+    margin-bottom: var(--email-margin);
+    background-color: var(--div-color);
+}

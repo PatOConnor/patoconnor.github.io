@@ -7,10 +7,11 @@ current_date = str(date.today())
 title = argv[1]
 page_link = argv[2]
 dirname = path.dirname(__file__)
+blogpost_dir = dirname[:-5]+'\\static\\posts\\'
 
 with open(dirname+'\\blogpost_template.html') as blog_template:
     tmplt = BeautifulSoup(blog_template, 'html.parser')
-with open(dirname[:-3]+'\\blog\\'+page_link) as post_data: 
+with open(blogpost_dir+page_link) as post_data: 
     new_post = BeautifulSoup(post_data, 'html.parser')
 print(tmplt.prettify())
 title_tag = tmplt.find("title")
@@ -21,5 +22,5 @@ title_tag.append(title)
 blog_title_div.append(title)
 blog_text_div.append(new_post)
 
-with open(dirname[:-3]+'\\pages\\'+current_date+'.html', 'w') as f:
+with open(dirname[:-5]+'\\pages\\blog\\'+current_date+'.html', 'w') as f:
     f.write(tmplt.prettify())

@@ -5,39 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="./patstyle.css">
-    <script src="src/populate_blog_posts.js"></script>
+    <link rel="stylesheet" href="indexstyle.css">
+
     <title>Pat O'Connor</title>
 </head>
 <body>
     <header>
-        <h2 id="header-title" class="title-card">Pat O'Connor</h2>
+        <div id="contact-info">
+            <div class="title-name">Pat O'Connor</div>
+            <div class="title-email">patoconnorcode@gmail.com</div>
+        </div>
     </header>
-    
-    <div id="body-content-wrapper">
-        <div id="current-projects-box", class="content-box">
-            <h3>Current Projects</h3>
-            <hr>
-            <ul>
-                <li>Visualizations of Boston Data</li>
-                <li>Full-Stack Developer class by MITxPro</li>
-                <li><a href="https://roshispizza.tech">Roshi's Pizza</a></li>
-            </ul>
-        </div>
 
-        <div id="blog-posts-box", class="content-box">
-            <h3>Blog</h3>
-            <hr>
-            <div id="recent-blog-posts">
-                <a href="./pages/2022-05-24.html">Project Started</a>
-            </div>
+    <div id="main-content-container">
+        <div id="welcome" class="content-unit">
+            <p>Welcome to my website. Please select the version you wish to access:</p>
         </div>
+        <hr>
+        <div class="content-unit">
+                <p><a href="./patsite-no-js/home.html"> No Javascript Required </a></p>
+        </div>
+        <!--
+        <div class="content-unit">
+            <p>Javascript Enabled</p>
+        </div>
+        <div class="content-unit">
+            <p>React App (requires JavaScript enabled)</p> 
+        </div>
+        -->
+        <hr>
     </div>
-    
-    <footer>
-        <p>Contact Me: patoconnorcode@gmail.com</p>
-    </footer>
-    
-    <script>populateBlog()</script>
+
+    <div id="disclaimers">
+        <p>Website hosted and powered by git pages</p>
+    </div>
 </body>
 </html>
