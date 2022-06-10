@@ -1,0 +1,32 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: (200px, 1fr, 200px);
+    gap: 20px;
+}
+
+div, header, footer {border: solid black 5px;}
+
+header {
+    /* centered and half-width */
+    grid-column: 4 / 10;
+    grid-row: 1;
+}
+
+#project-links {
+    /* left half of centered div */
+    grid-column: 3 / 7;
+    grid-row: 2;
+}
+
+#blog-links {
+    /* right half of centered div */
+    grid-column: 7 / 11;
+    grid-row: 2;
+}
+
+footer {
+    /* centered and half-width */
+    grid-column: 4 / 10;
+    grid-row: 3;
+}

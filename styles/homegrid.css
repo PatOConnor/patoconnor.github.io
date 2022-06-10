@@ -7,7 +7,6 @@
 
 div, header, footer {border: solid black 5px;}
 
-
 header {
     /* centered and half-width */
     grid-column: 4 / 10;
