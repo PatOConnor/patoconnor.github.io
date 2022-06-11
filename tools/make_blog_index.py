@@ -22,7 +22,9 @@ def run():
         #set href to post link in full
         new_link['href'] = './blog/'+post_link
         #set title to the chunk at the end between final - and file extension
-        new_link.append(post_link[1+post_link.rfind('-'):post_link.rfind('.')])
+        new_link.append(
+            post_link[:post_link.rfind('-')]+' | '+
+            post_link[1+post_link.rfind('-'):post_link.rfind('.')])
         #put it together
         new_item.append(new_link)
         posts_list.append(new_item)
