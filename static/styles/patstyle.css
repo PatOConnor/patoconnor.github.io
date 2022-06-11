@@ -10,6 +10,7 @@
     --content-radius: 5%;
     --content-border: black;
     --content-background-color: rgba(180, 140, 180, 0.26);
+    --list-item-border-color: rgba(170, 130, 110, 0.26);
     --body-background-color: rgb(249, 220, 244);
 
     background-color: var(--body-background-color);
@@ -17,42 +18,36 @@
     color: black;
 }
 
+
+footer {
+    text-align: center;
+    background-color: var(--content-background-color);
+    mix-blend-mode: darken;    
+}
+.naked-list{
+    list-style-type: none;
+    padding-left: 5%;
+}
+
+.list-link {
+    padding: 0;
+    border-left: 4px solid var(--list-item-border-color);
+    border-bottom: 2px solid var(--list-item-border-color);
+    text-align: left;
+}
+
+a {
+    /* color: black; */
+    text-emphasis-style: unset;
+}
+
 .title-card {
     text-align: center;
 }
 
-footer {
-    text-align: center;
-}
-
-
-#current-projects-box {
-    margin-right: var(--content-padding);
-}
-
-#blog-posts-box {
-    margin-left: var(--content-padding);
-}
-
-
-#body-content-wrapper {
-    display: flex;
-    flex-direction: row;
-    background-color: var(--body-background-color);
-    margin: auto;
-    height: var(--content-height);
-    width: var(--content-width);
-    padding: 10px;
-}
-
 .content-box {
-    height: var(--content-height);
-    width: var(--content-width);
-    padding: var(--content-padding);
     border-radius: var(--content-radius);
     border-color: var(--content-border);
     background-color: var(--content-background-color);
-    margin: auto;
-    mix-blend-mode: darken;
-    
+    mix-blend-mode: darken;    
 }

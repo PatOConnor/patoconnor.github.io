@@ -10,10 +10,11 @@ def run():
     with open(dirname+'/static/fragments/blog-links.html', 'w+') as f:
         #add link to div
         f.write("""<h3><a href="./pages/allposts.html">Blog</a></h3>\n
-                <hr>\n<ul>""")
+                <hr>\n<ul class="naked-list">""")
         for post in reversed(blogposts):
+            postdate = post[:post.rfind('-')]
             postname = post[1+post.rfind('-'):post.rfind('.')]
-            f.write(f"""<li><a href="./pages/blog/{post}">{postname}</a></li>\n""")
+            f.write(f"""<li class="list-link"><a href="./pages/blog/{post}">{postdate}   {postname}</a></li>\n""")
         f.write("</ul>")
 
 if __name__=='__main__':

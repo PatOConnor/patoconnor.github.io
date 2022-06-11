@@ -1,5 +1,6 @@
 from os import path
 from bs4 import BeautifulSoup
+import add_header_footer
 from sys import argv
 
 def run(page_link):
@@ -23,6 +24,9 @@ def run(page_link):
     title_tag.append(post_title)
     blog_title_div.append(post_title)
     blog_text_div.append(new_post)
+
+    tmplt = add_header_footer.run(tmplt)
+
 
     with open(dirname[:-5]+'patsite-no-js/pages/blog/'+page_link, 'w') as f:
         f.write(tmplt.prettify())

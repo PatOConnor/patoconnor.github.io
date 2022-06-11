@@ -7,14 +7,9 @@ from os import path, listdir
 def run():
     dirname = path.dirname(__file__)[:-5]
     rawdir = dirname+'/static/posts/'
-    posts_dirs = ['/patsite-no-js/',]
-    post_contents = listdir(rawdir)
-    for dir in posts_dirs:
-        dir_contents = listdir(dirname+dir)
-        #subtract sets to get unmade posts
-        unmade_posts = list(set(post_contents).difference(set(dir_contents)))
-        for post in unmade_posts:
-            make_blogpost.run(post)
+    posts = listdir(rawdir)
+    for post in posts:
+        make_blogpost.run(post)
 
 if __name__=='__main__':
     run()
