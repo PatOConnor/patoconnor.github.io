@@ -9,15 +9,31 @@
     --content-padding: 10px;
     --content-radius: 5%;
     --content-border: black;
-    --content-background-color: rgba(180, 140, 180, 0.26);
-    --list-item-border-color: rgba(170, 130, 110, 0.26);
-    --body-background-color: rgb(249, 220, 244);
+    
+    --content-background-color: rgba(180, 140, 180, 0.5);
+    --body-background-color: rgba(50, 16, 82, 0.3);
+    
+    --link-unvisited-color: rgba(49, 20, 44);
+    --link-visited-color: rgba(79, 50, 74);
+    
+    --list-item-border-color: rgba(20, 20, 20, 0.26);
+
+
 
     background-color: var(--body-background-color);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: black;
 }
 
+a {
+    color: var(--link-unvisited-color);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--link-unvisited-color);
+    text-decoration: none;
+}
 
 footer {
     text-align: center;
@@ -36,10 +52,6 @@ footer {
     text-align: left;
 }
 
-a {
-    /* color: black; */
-    text-emphasis-style: unset;
-}
 
 .title-card {
     text-align: center;
@@ -49,5 +61,7 @@ a {
     border-radius: var(--content-radius);
     border-color: var(--content-border);
     background-color: var(--content-background-color);
-    mix-blend-mode: darken;    
+    mix-blend-mode: darken;
+    padding: var(--content-padding);
+    
 }

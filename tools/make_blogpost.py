@@ -7,6 +7,7 @@ def run(page_link):
     hyphen = page_link.rfind('-')
     dot = page_link.rfind('.')
     post_title = page_link[1+hyphen:dot]
+    post_date = page_link[:hyphen]
 
     dirname = path.dirname(__file__)
     template_dir = dirname[:-5]+'static/templates'
@@ -22,7 +23,9 @@ def run(page_link):
     blog_text_div = tmplt.find(id="blogpost-text")
     
     title_tag.append(post_title)
-    blog_title_div.append(post_title)
+
+
+    blog_title_div.append(post_date+' | '+post_title)
     blog_text_div.append(new_post)
 
     tmplt = add_header_footer.run(tmplt)

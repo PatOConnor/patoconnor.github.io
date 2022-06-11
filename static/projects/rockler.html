@@ -1,0 +1,28 @@
+<h3>Rockler Accessor</h3>
+
+<p>This script automates the process of looking up the inventory at
+    an individual location of Rockler Lumber and Woodworking.</p>
+
+<h4>Features</h4>
+<ul>
+    <li>filter through a large data set</li>
+    <li>Acquires dataset from the web</li>
+</ul>
+
+<h4>How it Works</h4>
+<p>The rockler accessor uses selenium to remotely click 
+    the "check local inventory" button on the rockler website 
+    to display the table of info. It proceeds to use BeautifulSoup 
+    to parse the table into a data structure, and the user can input 
+    parameters to filter to the wood they'd prefer.</p>
+<p> There is a Command-Line version of the program, and a GUI version as well</p>
+
+
+<h4>Technologies</h4>
+<ul>
+    <li>BeautifulSoup</li>
+    <li>Selenium Webdriver</li>
+    <li>textualize/rich (Terminal GUI)</li>
+    <li>PyQt (GUI)</li>
+</ul>
+<p><a href="https://github.com/patoconnor/rocklerfilter">Download On Github</a></p>

@@ -10,7 +10,7 @@ def run():
     with open(dirname+'/static/fragments/blog-links.html', 'w+') as f:
         #add link to div
         f.write("""<h3><a href="./pages/allposts.html">Blog</a></h3>\n
-                <hr>\n<ul class="naked-list">""")
+                \n<ul class="naked-list">""")
         for post in reversed(blogposts):
             postdate = post[:post.rfind('-')]
             postname = post[1+post.rfind('-'):post.rfind('.')]
