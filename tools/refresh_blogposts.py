@@ -1,7 +1,7 @@
 # goes through files in /static/posts and checks if there is a 
 # corresponding file in nojs/pages/blog
 # if there is no corresponding file, make one.
-import generate_blogpost
+import make_blogpost
 from os import path, listdir
 
 def run():
@@ -14,7 +14,7 @@ def run():
         #subtract sets to get unmade posts
         unmade_posts = list(set(post_contents).difference(set(dir_contents)))
         for post in unmade_posts:
-            generate_blogpost.run(post)
+            make_blogpost.run(post)
 
 if __name__=='__main__':
     run()

@@ -9,10 +9,10 @@ def run():
     
     with open(dirname+'/static/fragments/blog-links.html', 'w+') as f:
         #add link to div
-        f.write("""<h3><a href="./pages/projects/allposts.html">Blog</a></h3>\n
+        f.write("""<h3><a href="./pages/allposts.html">Blog</a></h3>\n
                 <hr>\n<ul>""")
         for post in reversed(blogposts):
-            postname = post[1+post.rfind('-'):]
+            postname = post[1+post.rfind('-'):post.rfind('.')]
             f.write(f"""<li><a href="./pages/blog/{post}">{postname}</a></li>\n""")
         f.write("</ul>")
 
