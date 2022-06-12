@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="../../../static/styles/homegrid.css" rel="stylesheet"/>
+  <link href="../../../static/styles/patstyle.css" rel="stylesheet"/>
+  <title>
+  </title>
+ </head>
+ <body>
+  <div class="wrapper">
+   <header>
+    <h2 class="title-card" id="header-title">
+     <a href="https://patoconnor.github.io/patsite-no-js/home.html">
+      Pat's Portfolio
+     </a>
+    </h2>
+    <span class="contact-info" id="header-info">
+     <ul class="naked-list">
+      <li>
+       Writing code in the Boston area
+      </li>
+     </ul>
+    </span>
+   </header>
+   <div class="content-box wide-content" id="project-info">
+    <h3>
+     DovahPy
+    </h3>
+    <p>
+     This program is a set of tools intended to make playing skyrim on PC easier
+    </p>
+    <p>
+     The idea is that instead of looking up a bunch of individual items when making 
+    console commands, you can use command builder to generate them all at once.
+    </p>
+    <p>
+     The alchemist package briefly inputs keypresses to get your inventory info, 
+    so it needs to be executed with administrator privileges.
+    </p>
+    <h4>
+     Features
+    </h4>
+    <ul class="naked-list">
+     <li>
+      Skyrim Scraper
+     </li>
+     <ul>
+      <li>
+       Scrapes uesp and skyrimcommands to download 
+            a dataset of skyrim data
+      </li>
+     </ul>
+     <li>
+      Lookup
+     </li>
+     <ul>
+      <li>
+       Search through a data set of the various 
+            things you can put into a skyrim console command
+      </li>
+     </ul>
+     <li>
+      Command Maker
+     </li>
+     <ul>
+      <li>
+       Compile any console command from Skyrim
+      </li>
+      <li>
+       Create multiple commands in a row and save to one file
+      </li>
+      <li>
+       Can give nicknames to commands for reference
+      </li>
+      <li>
+       saves batch file of made commands to skyrim directory 
+            where it can immediately be run in-game
+      </li>
+     </ul>
+     <li>
+      Alchemist
+     </li>
+     <ul>
+      <li>
+       Gets a list of items in your skyrim inventory by taking screenshots 
+            and parsing image-to-text with the pyTesseract library
+      </li>
+      <li>
+       Passes that list into an algorithm that prints out the potions you 
+            should craft for maximum revenue
+      </li>
+     </ul>
+    </ul>
+    <h4>
+     Technologies
+    </h4>
+    <ul>
+     <li>
+      BeautifulSoup
+     </li>
+     <li>
+      Selenium Webdriver
+     </li>
+     <li>
+      textualize/rich (Terminal GUI)
+     </li>
+     <li>
+      PyAutoGUI
+     </li>
+     <li>
+      OpenCV2
+     </li>
+     <li>
+      Tesseract
+     </li>
+     <li>
+      regex
+     </li>
+    </ul>
+    <p>
+     <a href="https://github.com/patoconnor/dovahpy">
+      Download On Github
+     </a>
+    </p>
+    <p>
+     Issues?
+     <a href="mailto:patoconnorcode@gmail.com">
+      Email me about it!
+     </a>
+    </p>
+   </div>
+   <footer>
+    <!-- <link rel="stylesheet" href="static\styles\homegrid.css"> -->
+    <!-- <link rel="stylesheet" href="static\styles\patstyle.css"> -->
+    <!-- <footer> -->
+    <div class="footer-row">
+     <span class="footer-link">
+      <a href="https://patoconnor.github.io/patsite-no-js/home.html">
+       Home
+      </a>
+     </span>
+     <span class="footer-link">
+      <a href="https://patoconnor.github.io/patsite-no-js/pages/allposts.html">
+       Blog
+      </a>
+     </span>
+     <span class="footer-link">
+      <a href="https://patoconnor.github.io/patsite-no-js/pages/allprojects.html">
+       Projects
+      </a>
+     </span>
+     <span class="footer-link">
+      <a href="https://patoconnor.github.io/patsite-no-js/pages/legal.html">
+       Legal
+      </a>
+     </span>
+     <span class="footer-link">
+      <a href="https://patoconnor.github.io/index.html">
+       Index
+      </a>
+     </span>
+    </div>
+    <hr/>
+    <div class="footer-row">
+     <span class="footer-link">
+      <a href="https://www.github.com/patoconnor">
+       github
+      </a>
+     </span>
+     <!-- <span class="footer-link"><a href="">linkedin</a></span> -->
+     <!-- <span class="footer-link"><a href="">upwork</a></span> -->
+     <!-- <span class="footer-link"><a href="">fiverr</a></span> -->
+    </div>
+    <br/>
+    <div class="footer-row">
+     <span class="footer-link">
+      <a href="mailto:patoconnorcode@gmail.com">
+       e-mail me at patoconorcode@gmail.com
+      </a>
+     </span>
+    </div>
+    <!-- </footer> -->
+   </footer>
+  </div>
+ </body>
+</html>
