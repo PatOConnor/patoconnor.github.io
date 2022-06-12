@@ -12,6 +12,7 @@ def run():
         tmplt = BeautifulSoup(blog_template, 'html.parser')
     with open(page) as post_data: 
         new_post = BeautifulSoup(post_data, 'html.parser')
+        print(new_post.prettify())
     #print(tmplt.prettify())
     content_div = tmplt.find('ul')
     content_div.append(new_post)
