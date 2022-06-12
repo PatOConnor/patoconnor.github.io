@@ -12,7 +12,6 @@ def run():
         tmplt = BeautifulSoup(f, 'html.parser')
 
     tmplt = add_header_footer.run(tmplt)
-
     posts_list = tmplt.find('ul', {'id':'content-list'})
     for post_link in reversed(blogposts):
         new_item = tmplt.new_tag('li')
