@@ -1,34 +1,29 @@
-
-function populateProjectLinks(){
-    return
+var populateProjectLinks = () => {
+  placeFragmentAtTargetTag('project-links', '../../static/fragments/project-links.html')
 }
 
-function populateBlogLinks(){
-    return
+var populateBlogLinks = () => {
+  placeFragmentAtTargetTag('blog-links', '../../static/fragments/blog-links.html')
 }
+
+var placeHeader = () => {
+  placeFragmentAtTargetTag('page-header', '../../static/fragments/header.html')
+}
+
+var placeFooter = () => {
+  placeFragmentAtTargetTag('page-footer', '../../static/fragments/footer.html')
+}
+
+
 
 //grabs header div from /static/
-var placeHeader = () => {
-    const tagId = 'page-header'
-    const url   = '../../static/fragments/header.html'
-    targetDiv = document.getElementById(tagId)
+var placeFragmentAtTargetTag = (tagId, url) => {
+    let targetDiv = document.getElementById(tagId)
     console.log(targetDiv, url)    
     fetch(url)
-      .then(response => response.text())
-      .then(data => {
+    .then(response => response.text())
+    .then(data => {
+        console.log('within fetch call', targetDiv, url)    
         targetDiv.innerHTML += data
-      });
-    }
-
-//grabs footer div from /static/
-var placeFooter = () => {
-    const tagId = 'page-footer'
-    const url   = '../../static/fragments/footer.html'
-    targetDiv = document.getElementById(tagId)
-    console.log(targetDiv, url)    
-    fetch(url)
-      .then(response => response.text())
-      .then(data => {
-        targetDiv.append(data)
       });
     }
