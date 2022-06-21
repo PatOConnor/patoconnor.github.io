@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../static/styles/patstyle.css">
+    <link rel="stylesheet" href="../../static/styles/homegrid.css">
+    <script src="src/populate.js"></script>
+
+    <title>Pat's Portfolio</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header id="'page-header"></header>
+        <div id="project-links" class="narrow-content content-box"></div>
+        <div id="blog-links" class="narrow-content content-box"></div>
+        <footer id="page-footer"></footer>
+    </div>
+    <script>populateProjectLinks()</script>
+    <script>populateBlogLinks()</script>
+    <script>placeFragmentAtTargetTag('page-header')</script>
+    <script>placeFragmentAtTargetTag('page-footer')</script>
+</body>
+</html>
