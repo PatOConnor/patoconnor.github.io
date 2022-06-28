@@ -1,0 +1,48 @@
+.grid-wrapper {
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr 3fr 3fr 2fr 1fr;
+}
+
+#page-header {
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+#header-logo {
+    height: 100%;
+}
+
+#logo {
+    height: 100%;
+    grid-column: 1;
+}
+
+#header-bullets {
+    grid-column: 2;
+}
+
+#about-me-card {
+    grid-row: 2;
+}
+
+#video-card {
+    grid-row: 3;
+}
+
+#projects-card {
+    grid-row: 4;
+}
+
+#blog-card {
+    grid-row: 5;
+}
+
+#music-card {
+    grid-row: 6;
+}
+
+#footer {
+    grid-row: 7;
+}
+

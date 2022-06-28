@@ -1,67 +1,49 @@
-/*variables*/
 :root {
-    --header-height: 200px;
-    --header-width: 50%;
-    --header-radius: 10%;
+}
+body {
+    font-family: 'Trispace', sans-serif;
 
-    --content-height: 50%;
-    --content-width: 50%;
-    --content-padding: 10px;
-    --content-radius: 5%;
-    --content-border: black;
-    
-    --content-background-color: rgba(180, 140, 180, 0.5);
-    --body-background-color: rgba(50, 16, 82, 0.3);
-    
-    --link-unvisited-color: rgba(49, 20, 44);
-    --link-visited-color: rgba(79, 50, 74);
-    
-    --list-item-border-color: rgba(20, 20, 20, 0.26);
-
-
-
-    background-color: var(--body-background-color);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
+}
+header {
+    background-color: silver;
 }
 
-a {
-    color: var(--link-unvisited-color);
-    text-decoration: none;
+#about-me-card {
+    background-color: skyblue;
 }
 
-a:visited {
-    color: var(--link-unvisited-color);
-    text-decoration: none;
+#video-card {
+    background-color: silver;
+}
+
+#projects-card {
+    background-color: burlywood;
+}
+
+#blog-card {
+    background-color: skyblue;
+}
+
+#music-card {
+    background-color: burlywood;
 }
 
 footer {
-    text-align: center;
-    background-color: var(--content-background-color);
-    mix-blend-mode: darken;    
+    background-color: silver;
+    align-items: center;
 }
-.naked-list{
+
+.naked-list {
     list-style-type: none;
-    padding-left: 5%;
+    padding-left: 0%;
 }
 
 .list-link {
-    padding: 0;
-    border-left: 4px solid var(--list-item-border-color);
-    border-bottom: 2px solid var(--list-item-border-color);
-    text-align: left;
+    border-left: 5px solid black;
+    border-top: inherit;
+    border-bottom: inherit;
+
 }
-
-
-.title-card {
-    text-align: center;
-}
-
-.content-box {
-    border-radius: var(--content-radius);
-    border-color: var(--content-border);
-    background-color: var(--content-background-color);
-    mix-blend-mode: darken;
-    padding: var(--content-padding);
-    
+.link-thumb {
+    height: 1.2em;
 }
