@@ -1,0 +1,19 @@
+.grid-wrapper {
+    grid-template-rows: 50px 1fr 1fr 1fr;
+}
+
+#pacmen-card {
+    grid-row: 2;
+}
+
+#eye-exercise-card {
+    grid-row: 3;
+}
+
+#bus-tracking-card {
+    grid-row: 4;
+}
+
+.link-thumb {
+    height: 1.2em;
+}

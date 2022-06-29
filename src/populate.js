@@ -1,4 +1,4 @@
-var linksPerPage = 5
+var linksPerPage = 3
 
 populateBlogLinks = () => {
   let targetDiv = document.getElementById('blogposts-list');
