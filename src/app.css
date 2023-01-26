@@ -1,0 +1,103 @@
+:root {
+  --bgcolor: rgba(140, 150, 200, 0.6);
+  --color1: rgba(210, 150, 200, 0.6);
+  --color2: rgba(55, 72, 158, 0.6);
+  --color3: rgba(167, 57, 157, 0.6);
+  --color4: rgba(63, 182, 89, 0.6);
+}
+  
+  
+  @font-face {
+    font-family: Inconsolata;
+    src: url('fonts/Inconsolata/Inconsolata-VariableFont_wdth,wght.ttf');
+  }
+
+
+body {
+  font-family: Inconsolata, 'Courier New', Courier, monospace;
+  display: grid;
+  place-content: center;
+
+  background-image: url(../public/bridge.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.App {
+  height: 100%;
+  width: 90vw;
+  display: grid;
+  grid-template-rows: 80px;
+  grid-auto-flow: row;
+  grid-auto-rows: 1fr;
+  gap: 50px;
+
+  background-color: var(--bgcolor)
+}
+
+header {
+  background-color: var(--bgcolor);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+header > div {
+  padding-top: 18px;
+  text-align: center;
+}
+header > div > a {
+  color: black;
+}
+header > div > a:hover {
+  color:rgb(77, 63, 141);
+}
+
+.contentBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  border-radius: 40px;
+}
+
+.contentBlock > p {
+  width: 80%;
+}
+
+.sixtyLine {
+  background-color: black;
+  height: 1px;
+  width: 80%;
+}
+
+/* colored divs */
+.color1 {
+  background-color: var(--color1);
+}
+.color2 {
+  background-color: var(--color2)
+}
+.color3 {
+  background-color: var(--color3)
+}
+.color4 {
+  background-color: var(--color4);
+}
+
+
+/* desktop settings */
+@media screen and (min-width: 700px) {
+  .App {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    width: 60vw;
+  }
+
+  .contentBlock > p {
+    width: 60%;
+  }
+}
